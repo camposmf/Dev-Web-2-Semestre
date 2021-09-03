@@ -1,16 +1,20 @@
 
 
 <?php
-
+  define("Filename", "registrar_usuarios.txt");
   session_start();
 
   echo 'Welcome to List Users Page<br /><br />';
 
-  // mostrar os dados da secShow anterior
-  echo "<b> Primeiro Nome: </b>"    .$_SESSION["first-name"]  ."<br/>";
-  echo "<b> Número do CPF: </b>"    .$_SESSION["cpf-number"]   ."<br/>";
-  echo "<b> Time do Coração: </b>"  .$_SESSION["heart-team"]  ."<br/>";
+  $handle  = fopen(Filename, 'r');
 
-  echo '<br /><a href="welcome.php">Página de Welcome</a>';
-
+  while(!feof($handle)) {
+   $getLineContent = fgets($handle, 1024);
+   echo $getLineContent.'<br />';
+  }
+  fflush($handle);
+  fclose($handle);
+  
+  echo '<br /><a href="registerUser.php">Registrar novo usuário</a>';
+  echo '<br /><br/><a href="welcome.php">Página de Welcome</a>';
 ?>

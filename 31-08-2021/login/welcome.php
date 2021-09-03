@@ -27,7 +27,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <p>
         <a href="registerUser.php" class="btn btn-primary">Cadastro Pessoas</a>
         <br><br>
-        <a href="logout.php" class="btn btn-danger">Sair da conta</a>
+        <a href="listUsers.php" class="btn btn-success">Consultar Pessoas</a>
+        <br><br>
+        <a href="logout.php" class="btn btn-danger">Sair da conta pessoal</a>
     </p>
 </body>
 </html>
