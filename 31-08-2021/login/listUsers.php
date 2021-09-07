@@ -2,7 +2,8 @@
 
 <?php
   define("Filename", "registrar_usuarios.txt");
-  session_start();
+  
+  //session_start();
 
   echo 'Welcome to List Users Page<br /><br />';
 

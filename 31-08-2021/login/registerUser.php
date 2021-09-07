@@ -23,8 +23,6 @@
         die;
     }
 
-    session_start();
-
     if(!file_exists(Filename))
       $handle = fopen(Filename, "w");
     else 
@@ -34,10 +32,10 @@
     fflush($handle);
     fclose($handle);
 
-    // salvando os dados do usuário na secShow
-    $_SESSION["first-name"] = $_POST["first-name"];
-    $_SESSION["heart-team"] = $_POST["heart-team"];
-    $_SESSION["cpf-number"] = $_POST["cpf-number"];
+    // // salvando os dados do usuário na secShow
+    // $_SESSION["first-name"] = $_POST["first-name"];
+    // $_SESSION["heart-team"] = $_POST["heart-team"];
+    // $_SESSION["cpf-number"] = $_POST["cpf-number"];
 
     header("location: listUsers.php");
   }
