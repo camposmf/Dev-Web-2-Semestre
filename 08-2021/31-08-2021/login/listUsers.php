@@ -13,6 +13,7 @@
    $getLineContent = fgets($handle, 1024);
    echo $getLineContent.'<br />';
   }
+  
   fflush($handle);
   fclose($handle);
   

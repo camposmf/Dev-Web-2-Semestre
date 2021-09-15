@@ -1,7 +1,5 @@
 <?php
-
   define("Filename", "registrar_usuarios.txt");
-
 
   if($_SERVER["REQUEST_METHOD"] == "POST"){
 
@@ -23,11 +21,7 @@
         die;
     }
 
-    if(!file_exists(Filename))
-      $handle = fopen(Filename, "w");
-    else 
-      $handle = fopen(Filename, "a");
-
+    $handle = fopen(Filename, "a");
     fwrite($handle, $_POST['first-name']." - ".$_POST['cpf-number']." - ".$_POST['heart-team']."\n");
     fflush($handle);
     fclose($handle);

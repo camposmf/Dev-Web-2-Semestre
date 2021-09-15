@@ -1,8 +1,6 @@
 <?php
- 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         session_start();
-
         if($_POST['username'] == 'orlando' and $_POST['password'] == '123mudar'){
             $_SESSION['loggedin'] = TRUE;
             $_SESSION["username"] = 'Orlando Saraiva';
@@ -10,7 +8,6 @@
         } else {
             $_SESSION['loggedin'] = FALSE;
         }
-
     }
 ?>
  
@@ -32,12 +29,12 @@
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
                 <label>Username</label>
-                <input type="text" name="username" class="form-control" value="orlando">
+                <input type="text" name="username" class="form-control">
                 <span class="help-block"></span>
             </div>    
             <div class="form-group">
                 <label>Password</label>
-                <input type="password" name="password" class="form-control" value="123mudar">
+                <input type="password" name="password" class="form-control">
                 <span class="help-block"></span>
             </div>
             <div class="form-group">
