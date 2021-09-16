@@ -1,6 +1,6 @@
 <?php
 
-  class Pessoa {
+  abstract class Pessoa {
     protected $nome;
     protected $idade;
     protected $pessoaPresenca;
@@ -86,6 +86,7 @@
   $alunos = [
     ["Bart", 19, "Arquitetura de Software", false, true],
     ["Barry", 31, "Engenharia de Software", true, true],
+    ["Craque Neto", 55, "Jogador", false, false],
     ["Marcolino", 22, "Desenvolvimento de Software em multiplataformas", true, true]
   ];
   $aluno = new Aluno($alunos);
