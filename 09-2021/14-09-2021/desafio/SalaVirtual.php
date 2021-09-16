@@ -38,10 +38,10 @@
       if(is_bool($possuiColecaoBonecos))
         $this->possuiColecaoBonecos = $possuiColecaoBonecos;
 
-      $this->imprimirProfessor();
+      $this->listarProfessor();
     }
 
-    public function imprimirProfessor(){
+    public function listarProfessor(){
       print "Nome do professor: {$this->nome}<br/>";
       print "Idade do professor: {$this->idade}<br/>";
       print "Matéria do professor: {$this->materiaAula}<br/>";
@@ -62,10 +62,10 @@
       if(is_array($alunos))
         $this->alunos = $alunos;
 
-      $this->imprimirAlunos();
+      $this->listarAlunos();
     }
     
-    public function imprimirAlunos(){
+    public function listarAlunos(){
       foreach ($this->alunos as $alunos => $value) {
         print "Nome do aluno: {$value[0]}<br/>";
         print "Idade do aluno: {$value[1]}<br/>";
