@@ -1,7 +1,7 @@
 <?php 
 class Pessoa 
 { 
-    protected $nome; 
+    private $nome; 
     
     public function __construct($nome) 
     { 
@@ -30,4 +30,4 @@ class Funcionario extends Pessoa
 $p1 = new Funcionario('Maria da Silva'); 
 $p1->contrata( 'Auxiliar administrativo', 1600 ); 
 
-print $p1->getInfo(); 
+print $p1->getInfo();

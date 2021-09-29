@@ -1,5 +1,5 @@
 <?php
-require_once 'classes/Produto.php'; 
+require_once 'classes/Produto.php';
 require_once 'classes/Caracteristica.php'; 
 
 // criação dos objetos 

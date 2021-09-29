@@ -3,7 +3,7 @@ class Pessoa
 { 
     private $nome; 
     private $endereco; 
-    private $nascimento; 
+    private $nascimento;
 } 
 
 $p1 = new Pessoa; 

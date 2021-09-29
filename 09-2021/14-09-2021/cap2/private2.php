@@ -13,7 +13,8 @@ class Pessoa
     
     public function setNascimento($nascimento) 
     { 
-        $partes = explode('-', $nascimento); 
+        $partes = explode('-', $nascimento);
+
         if (count($partes)==3) { 
             if (checkdate ( $partes[1] , $partes[2] , $partes[0] )) { 
                 $this->nascimento = $nascimento; 
@@ -39,4 +40,4 @@ if ($p1->setNascimento('2015-12-30')) {
 } 
 else { 
     print "Não atribuiu 2015-12-30<br>\n"; 
-} 
+}

@@ -9,10 +9,10 @@ class Produto //implements OrcavelInterface
 	 
 	public function __construct($descricao, $estoque, $preco) 
 	{ 
-            $this->caracteristicas = [];
-            $this->descricao = $descricao; 
-            $this->estoque = $estoque; 
-            $this->preco = $preco;  
+    $this->caracteristicas = [];
+    $this->descricao = $descricao; 
+    $this->estoque = $estoque; 
+    $this->preco = $preco;  
 	} 
 	 
 	public function getDescricao() 

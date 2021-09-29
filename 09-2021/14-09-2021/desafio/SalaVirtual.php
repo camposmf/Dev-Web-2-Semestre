@@ -80,17 +80,17 @@
     }
   }
 
-  $professor = new Professor("Orlando", 15, "DSM", true, true);
-  $professor = new Professor("Nilton", 20, "DSM", true, false);
+  $professor = new Professor("Orlando", 15, "DSM", true, false);
+  $professor.listarAlunos();
   
   $alunos = [
     ["Bart", 19, "Arquitetura de Software", false, true],
     ["Barry", 31, "Engenharia de Software", true, true],
-    ["Craque Neto", 55, "Jogador", false, false],
+    ["Craque Neto", 55, "Jugador", false, false],
     ["Marcolino", 22, "Desenvolvimento de Software em multiplataformas", true, true]
   ];
-  $aluno = new Aluno($alunos);
 
+  $aluno = new Aluno($alunos);
   unset($professor);
   unset($aluno);
 ?>

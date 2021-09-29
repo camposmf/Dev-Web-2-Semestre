@@ -1,14 +1,23 @@
 <?php
-  class Pessoa {
-    private $nome;
-    private $sobrenome;
-    private $cpf;
-    private $timeCoracao;
+  abstract class Pessoa {
+    protected $cpf;
+    protected $nome;
+    protected $idade;
+    protected $sobrenome;
+    protected $timeCoracao;
+    protected $pessoaPresenca;
 
-    public function __construct( $nome, $sobrenome, $cpf, $timeCoracao){
-      $this->nome = $nome;
-      $this->sobrenome = $sobrenome;
-      $this->cpf = $cpf;
+    public function __construct( $nome, $sobrenome, $cpf, $timeCoracao, $idade){
+      if(str_len($nome)> 0)
+        $this->nome = $nome;
+
+      if(str_len($sobrenome)> 0)
+        $this->sobrenome = $sobrenome;
+      
+      if(str_len($cpf) > 0)
+        $this->cpf = $cpf;
+        
+      $this->cpf = $cpf;  
       $this->timeCoracao = "Corinthians";
     }
 
